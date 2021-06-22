@@ -12,4 +12,10 @@ require './question'
 player1 = Player.new(1)
 player2 = Player.new(2)
 
+
 #Start Game
+
+# random question
+q = Question.new()
+q.rand_question
+puts q.answer
