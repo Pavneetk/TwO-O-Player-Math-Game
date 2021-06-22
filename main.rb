@@ -20,4 +20,5 @@ player2 = Player.new(2)
 #Start Game
 puts "----- NEW GAME -----"
 
-game = Game.new()
+game = Game.new(player1, player2)
+game.life
