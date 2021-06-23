@@ -6,7 +6,6 @@ class Game
   attr_accessor :player
 
   def initialize(p1,p2)
-    #puts p1
     @players = [p1,p2]
     @player = @players[0]
   end

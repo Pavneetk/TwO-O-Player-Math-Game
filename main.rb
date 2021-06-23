@@ -13,15 +13,15 @@ player1 = Player.new(1)
 player2 = Player.new(2)
 
 
-# random question
+# invoke question
  q = Question.new()
-# q.rand_question
-# puts q.answer
+
 
 #Start Game
 game = Game.new(player1, player2)
 puts "----- NEW GAME -----"
 
+#Continues asking questions untill the player lives are under 1
 while player1.life >= 1 && player2.life >=1 do
  puts "----- NEW TURN -----"
  puts "Player #{game.player.id}: #{q.rand_question}" 
@@ -37,6 +37,8 @@ while player1.life >= 1 && player2.life >=1 do
  game.players_life
  game.next_player
 end
+
+#Print winner details and end game
 puts "Player #{game.player.id} wins with a score of #{game.player.life}/3"
 puts "----- GAME OVER -----"
 puts "Good Bye!"
